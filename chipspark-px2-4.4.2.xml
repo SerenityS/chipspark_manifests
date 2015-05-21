@@ -25,11 +25,6 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" remote="rk" revision="chipspark/4.4.2_r1/release"  />
-  <!--project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
-  <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
-  <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" /-->
   <project path="device/common" name="device/common" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="device/rockchip/common" name="rk/device/rockchip/common" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="device/rockchip/rkpx2" name="rk/device/rockchip/rkpx2" remote="rk" revision="chipspark/4.4.2_r1/release"  >
@@ -44,14 +39,6 @@
   <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" />
   <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
-  <!--project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
-  <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
-  <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
-  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
-  <project path="device/sample" name="device/sample" groups="pdk" />
-  <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" /-->
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -279,22 +266,8 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
-  <!--project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
-  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom" />
-  <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
-  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" /-->
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
-  <!--project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="qcom_msm8x74" />
-  <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom" />
-  <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
-  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" /-->
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <!--project path="hardware/samsung_slsi/exynos5" name="platform/hardware/samsung_slsi/exynos5" groups="exynos5" />
-  <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" />
-  <project path="hardware/ti/omap4xxx" name="platform/hardware/ti/omap4xxx" groups="omap4" />
-  <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
-  <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" /-->
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
@@ -439,12 +412,7 @@
   <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="external/ntfs-3g" name="rk/platform/external/ntfs-3g" remote="rk" revision="chipspark/4.4.2_r1/release"  />
   <project path="external/rk-pcba-test" name="rk/platform/external/rk-pcba-test" remote="rk" revision="chipspark/4.4.2_r1/release"   />
-  <!--project path="hardware/mediatek" name="rk/platform/hardware/mediatek"  remote="rk" revision="chipspark/4.4.2_r1/release"  />
-  <project path="hardware/realtek" name="rk/platform/hardware/realtek"  remote="rk" revision="chipspark/4.4.2_r1/release" /-->
   <project path="hardware/rk29/sensor" name="rk/hardware/rk29/sensor" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <!--the following two projects build fail.-->
-  <!--project path="hardware/rk29/mobicore" name="rk/hardware/rk29/mobicore" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/libkeymaster" name="rk/hardware/rk29/libkeymaster" remote="rk" revision="chipspark/4.4.2_r1/release" /-->
   <project path="hardware/rk29/liblights" name="rk/hardware/rk29/liblights" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="hardware/rk29/power" name="rk/hardware/rk29/power" remote="rk" revision="chipspark/4.4.2_r1/release" />
   <project path="hardware/rk29/jpeghw" name="rk/hardware/rk29/jpeghw" remote="rk" revision="chipspark/4.4.2_r1/release" />
