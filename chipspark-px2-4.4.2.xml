@@ -2,32 +2,32 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="ssh://git@chipspark/repo/" />
+           fetch="https://android.googlesource.com/" />
   <remote  name="rk"
-           fetch="ssh://git@chipspark/repo/" />
+           fetch="https://github.com/opensourcechipspark/" />
   <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release">
+  <project path="build" name="platform_build.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" />
-  <project path="bionic" name="platform/bionic" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="bionic" name="platform_bionic.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="bootable/recovery" name="platform_bootable_recovery.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="cts" name="platform/cts" groups="cts" />
   <project path="dalvik" name="platform/dalvik" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="platform/development" remote="rk" revision="chipspark/4.4.2_r1/release"  />
-  <project path="device/common" name="device/common" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="device/rockchip/common" name="rk/device/rockchip/common" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="device/rockchip/rkpx2" name="rk/device/rockchip/rkpx2" remote="rk" revision="chipspark/4.4.2_r1/release"  >
+  <project path="development" name="platform_development.git" remote="rk" revision="rockchip-android-4.4.2_r1"  />
+  <project path="device/common" name="device_common.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="device/rockchip/common" name="device_rockchip_common.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="device/rockchip/rkpx2" name="device_rockchip_rkpx2.git" remote="rk" revision="rockchip-android-4.4.2_r1"  >
   <copyfile src="buildspec.mk" dest="buildspec.mk" />
   <copyfile src="mkimage.sh" dest="mkimage.sh" />
   </project>
@@ -52,16 +52,16 @@
   <project path="external/arduino" name="platform/external/arduino" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
-  <project path="external/chromium" name="platform/external/chromium" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/chromium" name="platform_external_chromium.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="pdk" />
-  <project path="external/chromium_org" name="platform/external/chromium_org" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/chromium_org" name="platform_external_chromium_org.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/WebKit" name="platform/external/chromium_org/third_party/WebKit" />
@@ -147,7 +147,7 @@
   <project path="external/libogg" name="platform/external/libogg" />
   <project path="external/libpcap" name="platform/external/libpcap" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
-  <project path="external/libpng" name="platform/external/libpng" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/libpng" name="platform_external_libpng.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/libppp" name="platform/external/libppp" />
   <project path="external/libselinux" name="platform/external/libselinux" groups="pdk" />
   <project path="external/libsepol" name="platform/external/libsepol" groups="pdk" />
@@ -188,7 +188,7 @@
   <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
   <project path="external/oprofile" name="platform/external/oprofile" />
   <project path="external/pixman" name="platform/external/pixman" />
-  <project path="external/ppp" name="platform/external/ppp" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/ppp" name="platform_external_ppp.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/proguard" name="platform/external/proguard" groups="pdk-java" />
   <project path="external/protobuf" name="platform/external/protobuf" groups="pdk" />
   <project path="external/qemu" name="platform/external/qemu" />
@@ -198,10 +198,10 @@
   <project path="external/robolectric" name="platform/external/robolectric" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/scrypt" name="platform/external/scrypt" groups="pdk" />
-  <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/sepolicy" name="platform_external_sepolicy.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/sfntly" name="platform/external/sfntly" />
   <project path="external/sil-fonts" name="platform/external/sil-fonts" remote="aosp" revision="refs/tags/android-4.4_r1"/>
-  <project path="external/skia" name="platform/external/skia" remote="rk" revision="chipspark/4.4.2_r1/release"  />
+  <project path="external/skia" name="platform_external_skia.git" remote="rk" revision="rockchip-android-4.4.2_r1"  />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -225,21 +225,21 @@
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
-  <project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="external/zlib" name="platform_external_zlib.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="frameworks/base" name="platform/frameworks/base" remote="rk" revision="chipspark/4.4.2_r1/release"/>
+  <project path="frameworks/av" name="platform_frameworks_av.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="frameworks/base" name="platform_frameworks_base.git" remote="rk" revision="rockchip-android-4.4.2_r1"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="frameworks/native" name="platform_frameworks_native.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
@@ -251,7 +251,7 @@
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release"  />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1"  />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
@@ -263,74 +263,74 @@
   <project path="hardware/akm" name="platform/hardware/akm" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="hardware/libhardware" name="hardware_libhardware.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="hardware/ril" name="platform_hardware_ril.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/Browser" name="platform_packages_apps_Browser.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/Calculator" name="platform_packages_apps_Calculator.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/Calendar" name="platform_packages_apps_Calendar.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/Camera" name="platform_packages_apps_Camera.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/CellBroadcastReceiver" name="platform/packages/apps/CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/Gallery2" name="platform_packages_apps_Gallery2.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/Launcher2" name="platform_packages_apps_Launcher2.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/Music" name="platform_packages_apps_Music.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="packages/apps/MusicFX" name="platform_packages_apps_MusicFX.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/Provision" name="platform_packages_apps_Provision.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/SoundRecorder" name="platform_packages_apps_SoundRecorder.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
   <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/UnifiedEmail" name="platform/packages/apps/UnifiedEmail" />
-  <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/apps/VideoEditor" name="platform_packages_apps_VideoEditor.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" remote="rk" revision="chipspark/4.4.2_r1/release"/>
+  <project path="packages/inputmethods/PinyinIME" name="platform_packages_inputmethods_PinyinIME.git" remote="rk" revision="rockchip-android-4.4.2_r1"/>
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
   <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" remote="rk" revision="chipspark/4.4.2_r1/release"/>
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider.git" remote="rk" revision="rockchip-android-4.4.2_r1"/>
   <project path="packages/providers/PartnerBookmarksProvider" name="platform/packages/providers/PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
   <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/services/Telephony" name="platform/packages/services/Telephony" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -388,12 +388,12 @@
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="system/core" name="platform_system_core.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="system/extras" name="platform/system/extras" groups="pdk" />
-  <project path="system/media" name="platform/system/media" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release"  />
+  <project path="system/media" name="platform_system_media.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="system/netd" name="platform_system_netd.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1"  />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release"/>
+  <project path="system/vold" name="platform_system_vold.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1"/>
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -405,23 +405,23 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="kernel" name="rk/kernel" remote="rk" revision="chipspark/develop-3.0-px2" />
-  <project path="u-boot" name="rk/u-boot" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="external/wlan_loader" name="rk/platform/external/wlan_loader" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="external/mac" name="rk/platform/external/mac" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="external/ntfs-3g" name="rk/platform/external/ntfs-3g" remote="rk" revision="chipspark/4.4.2_r1/release"  />
-  <project path="external/rk-pcba-test" name="rk/platform/external/rk-pcba-test" remote="rk" revision="chipspark/4.4.2_r1/release"   />
-  <project path="hardware/rk29/sensor" name="rk/hardware/rk29/sensor" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/liblights" name="rk/hardware/rk29/liblights" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/power" name="rk/hardware/rk29/power" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/jpeghw" name="rk/hardware/rk29/jpeghw" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/camera" name="rk/hardware/rk29/camera" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/libon2" name="rk/hardware/rk29/libon2" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/libiep" name="rk/hardware/rk29/libiep" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/audio" name="rk/hardware/rk29/audio" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/hwcomposer_rga" name="rk/hardware/rk29/hwcomposer_rga" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="hardware/rk29/libgralloc_ump" name="rk/hardware/rk29/libgralloc_ump" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="vendor" name="rk/vendor" remote="rk" revision="chipspark/4.4.2_r1/release" />
-  <project path="rkst" name="rk/rkst" remote="rk" revision="chipspark/4.4.2_r1/release" />
+  <project path="kernel" name="px2-android-kernel-3.0.git" remote="rk" revision="chipspark/develop-3.0-px2" />
+  <project path="u-boot" name="px2_uboot.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/wlan_loader" name="external_wlan_loader.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/mac" name="external_mac.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/ntfs-3g" name="external_ntfs-3g.git" remote="rk" revision="rockchip-android-4.4.2_r1"  />
+  <project path="external/rk-pcba-test" name="platform_external_rk-pcba-test.git" remote="rk" revision="rockchip-android-4.4.2_r1"   />
+  <project path="hardware/rk29/sensor" name="hardware_rk29_sensor.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/liblights" name="hardware_rk29_liblights.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/power" name="hardware_rk29_power.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/jpeghw" name="hardware_rk29_jpeghw.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/camera" name="hardware_rk29_camera.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/libon2" name="hardware_rk29_libon2.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/libiep" name="hardware_rk29_libiep.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/audio" name="hardware_rk29_audio.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/hwcomposer_rga" name="hardware_rk29_hwcomposer_rga.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/rk29/libgralloc_ump" name="hardware_rk29_libgralloc_ump.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="vendor" name="vendor.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="rkst" name="rkst.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
 </manifest>
