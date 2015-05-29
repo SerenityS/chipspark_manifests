@@ -26,7 +26,7 @@
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform_development.git" remote="rk" revision="rockchip-android-4.4.2_r1"  />
   <project path="device/common" name="device_common.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
-  <project path="device/rockchip/common" name="device_rockchip_common.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="device/rockchip/common" name="rk_device_rockchip_common.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="device/rockchip/rkpx2" name="device_rockchip_rkpx2.git" remote="rk" revision="rockchip-android-4.4.2_r1"  >
   <copyfile src="buildspec.mk" dest="buildspec.mk" />
   <copyfile src="mkimage.sh" dest="mkimage.sh" />
@@ -52,7 +52,7 @@
   <project path="external/arduino" name="platform/external/arduino" />
   <project path="external/bison" name="platform/external/bison" groups="pdk" />
   <project path="external/blktrace" name="platform/external/blktrace" />
-  <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/bluetooth/bluedroid" name="platform_external_bluetooth_bluedroid.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
@@ -407,10 +407,10 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="kernel" name="px2-android-kernel-3.0.git" remote="rk" revision="chipspark/develop-3.0-px2" />
   <project path="u-boot" name="uboot.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
-  <project path="external/wlan_loader" name="external_wlan_loader.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
-  <project path="external/mac" name="external_mac.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
-  <project path="external/e2fsprogs" name="external_e2fsprogs.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
-  <project path="external/ntfs-3g" name="external_ntfs-3g.git" remote="rk" revision="rockchip-android-4.4.2_r1"  />
+  <project path="external/wlan_loader" name="platform_external_wlan_loader.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/mac" name="platform_external_mac.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs.git" groups="pdk" remote="rk" revioion="rockchip-android-4.4.2_r1" />
+  <project path="external/ntfs-3g" name="platform_external_ntfs-3g.git" remote="rk" revision="rockchip-android-4.4.2_r1"  />
   <project path="external/rk-pcba-test" name="platform_external_rk-pcba-test.git" remote="rk" revision="rockchip-android-4.4.2_r1"   />
   <project path="hardware/rk29/sensor" name="hardware_rk29_sensor.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="hardware/rk29/liblights" name="hardware_rk29_liblights.git" remote="rk" revision="rockchip-android-4.4.2_r1" />
