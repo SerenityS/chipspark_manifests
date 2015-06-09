@@ -91,7 +91,7 @@
   <project groups="pdk" name="platform/external/expat" path="external/expat" revision="0af0cb3bc7519e567bd9daff3dcd315ab0134a99" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/external/fdlibm" path="external/fdlibm" revision="0da5f683c9ddc9442af3b389b4220e91ccffb320" upstream="refs/tags/android-4.4.4_r2.0.1"/>
-  <project groups="pdk" name="platform_external_flac.git" path="external/flac" revision="929367d2fb0f8f5b4d25a30918eeaaa135ab6ad6" upstream="rk32/mid/4.4_r1/release"/>
+  <project groups="pdk" name="platform_external_flac.git" path="external/flac" remote="rk" revision="929367d2fb0f8f5b4d25a30918eeaaa135ab6ad6" upstream="rk32/mid/4.4_r1/release"/>
   <project groups="pdk" name="platform/external/freetype" path="external/freetype" revision="899c67b6cfcd2010784fbf08c5415af16c526e0c" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="17a1471db8c528cd9d44ec4385d2eb3614138856" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform/external/ganymed-ssh2" path="external/ganymed-ssh2" revision="d3724dabc1cfbacd105fe6c422b4dcba80e4fb2d" upstream="refs/tags/android-4.4.4_r2.0.1"/>
