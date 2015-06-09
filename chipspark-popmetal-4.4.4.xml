@@ -399,8 +399,6 @@
   <project groups="pdk" name="platform_system_vold.git" path="system/vold" remote="rk" revision="rk30/mid/4.4_r1/release"/>
   <project groups="tools" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="5b54b0e25a4b55fa6a180d225f8f1790fb63287b" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project groups="tools" name="platform/tools/external/gradle" path="tools/external/gradle" revision="8ff4a755637a21ac7b5918d86302e22ba3f7fa37" upstream="refs/tags/android-4.4.4_r2.0.1"/>
-  <project name="rk_RKDocs.git" path="RKDocs" remote="rk" revision="rk3288"/>
-  <project name="rk_RKTools.git" path="RKTools" remote="rk" revision="rk3288"/>
   <project name="rk_device_rockchip_common.git" path="device/rockchip/common" remote="rk32" revision="rk32/mid/4.4_r1/release"/>
   <project name="rk_device_rockchip_rk3288.git" path="device/rockchip/rk3288" remote="rk32" revision="rk32/mid/4.4_r1/release"/>
   <project name="rk_device_rockchip_rksdk.git" path="device/rockchip/rksdk" remote="rk32" revision="rk32/mid/4.4_r1/release">
