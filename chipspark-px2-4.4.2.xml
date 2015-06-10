@@ -264,7 +264,7 @@
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/libhardware" name="hardware_libhardware.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
+  <project path="hardware/libhardware_legacy" name="platform_hardware_libhardware_legacy.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
   <project path="hardware/ril" name="platform_hardware_ril.git" groups="pdk" remote="rk" revision="rockchip-android-4.4.2_r1" />
