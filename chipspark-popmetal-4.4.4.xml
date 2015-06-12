@@ -6,7 +6,7 @@
   
   <default remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" sync-c="true" sync-j="4"/>
   
-  <project name="device_common.git" remote="rk" revision="rk30/mid/4.4_r1/release"/>
+  <project name="device_common.git" path="device/common" remote="rk" revision="rk30/mid/4.4_r1/release"/>
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="18f1b5e28734183ff8073fe86dc46bc4ebba8a59" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project name="platform_art.git" path="art" remote="rk32" revision="rk32/mid/4.4_r1/release"/>
   <project groups="pdk" name="platform_bionic.git" path="bionic" remote="rk32" revision="rk32/mid/4.4_r1/release"/>
